@@ -34,6 +34,23 @@ console.log(result); */
 // console.log(result);
 
 
+const doMath=(numbersArray)=>{
+    let newArray=[];
+    let sum=0;
+    let avg=0;
+    for(let number of numbersArray){
+        const value=number*number;
+        newArray.push(value);
+        sum=sum+value;
+    }
+    avg=sum/newArray.length;
+    return avg;
+}
+const numbers=[2,3,5];
+const result=doMath(numbers);
+console.log(result.toFixed(2));
+
+
 
 
 
