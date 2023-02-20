@@ -33,23 +33,33 @@ console.log(result); */
 // const result=friendNameLength(friends);
 // console.log(result);
 
+// problem:5
+// const doMath=(numbersArray)=>{
+//     let newArray=[];
+//     let sum=0;
+//     let avg=0;
+//     for(let number of numbersArray){
+//         const value=number*number;
+//         newArray.push(value);
+//         sum=sum+value;
+//     }
+//     avg=sum/newArray.length;
+//     return avg;
+// }
+// const numbers=[2,3,5];
+// const result=doMath(numbers);
+// console.log(result.toFixed(2));
 
-const doMath=(numbersArray)=>{
-    let newArray=[];
-    let sum=0;
-    let avg=0;
-    for(let number of numbersArray){
-        const value=number*number;
-        newArray.push(value);
-        sum=sum+value;
-    }
-    avg=sum/newArray.length;
-    return avg;
+
+const maximum=(array1,array2)=>{
+    let newArray=[...array1,...array2];
+    const big=Math.max(...newArray);
+    return big;
 }
-const numbers=[2,3,5];
-const result=doMath(numbers);
-console.log(result.toFixed(2));
-
+const firstArray=[10,20,30];
+const secondArray=[40,50,60];
+const result=maximum(firstArray,secondArray);
+console.log(result);
 
 
 
